@@ -4,14 +4,7 @@ import re
 from langchain_groq import ChatGroq
 
 # Initialize the LLM API
-llm = ChatGroq(
-    model="mixtral-8x7b-32768",
-    temperature=0,
-    max_tokens=None,
-    timeout=None,
-    max_retries=2,
-    groq_api_key='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',
-)
+#Your LLM Chatgroq api token and api key
 
 # Function to load data from CSV to SQLite database
 def load_excel_to_sql(excel_file, db_file):
